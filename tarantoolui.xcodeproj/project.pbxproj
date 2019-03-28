@@ -38,6 +38,7 @@
 		5EC25EFA2236DED300B6004D /* ConnectionsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC25EF92236DED300B6004D /* ConnectionsDelegate.m */; };
 		5ED687002246DD56006D364B /* AlterSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED686FF2246DD56006D364B /* AlterSpace.m */; };
 		5ED687022247F08F006D364B /* alterspace.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5ED687012247F08F006D364B /* alterspace.lua */; };
+		5EDB7B60224D712B00990026 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5EDB7B5F224D712A00990026 /* README.md */; };
 		5EF99E162232B07800ADD7A6 /* GetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF99E152232B07800ADD7A6 /* GetData.m */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		5ED686FF2246DD56006D364B /* AlterSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterSpace.m; sourceTree = "<group>"; };
 		5ED687012247F08F006D364B /* alterspace.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = alterspace.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
 		5EDB7B5D224D6BD800990026 /* libtarantool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtarantool.a; path = "tarantool-c/tnt/libtarantool.a"; sourceTree = "<group>"; };
+		5EDB7B5F224D712A00990026 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5EF99E142232B06C00ADD7A6 /* GetData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetData.h; sourceTree = "<group>"; };
 		5EF99E152232B07800ADD7A6 /* GetData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetData.m; sourceTree = "<group>"; };
 		5EF99E172232B0CC00ADD7A6 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		5E8F26A621BEC55600DA3854 = {
 			isa = PBXGroup;
 			children = (
+				5EDB7B5F224D712A00990026 /* README.md */,
 				5E8F26C521BEC76800DA3854 /* tarantool-c */,
 				5E8F26B121BEC55600DA3854 /* tarantoolui */,
 				5E8F26B021BEC55600DA3854 /* Products */,
@@ -308,6 +311,7 @@
 				5EACE4362247FF36008A8766 /* getspaces.lua in Resources */,
 				5E8F26B621BEC55700DA3854 /* Assets.xcassets in Resources */,
 				5ED687022247F08F006D364B /* alterspace.lua in Resources */,
+				5EDB7B60224D712B00990026 /* README.md in Resources */,
 				5E6A5DF5223D91D100C1B391 /* CreateSpace.xib in Resources */,
 				5E4D99BC224004B900AC134F /* DropSpace.xib in Resources */,
 				5EACE4322247FE0B008A8766 /* dropspace.lua in Resources */,
@@ -335,7 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd tarantool-c\ncmake -DCMAKE_INSTALL_PREFIX=$DERIVED_FILE_DIR .\nmake \nrm -rf tnt/*.dylib\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd tarantool-c\ncmake -DCMAKE_INSTALL_PREFIX=$DERIVED_FILE_DIR -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 .\nmake \nrm -rf tnt/*.dylib\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
