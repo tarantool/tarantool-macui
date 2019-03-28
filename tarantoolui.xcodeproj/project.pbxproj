@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E4D99BC224004B900AC134F /* DropSpace.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D99BB224004B900AC134F /* DropSpace.xib */; };
+		5E4D99BF22400CB700AC134F /* DropSpaceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D99BE22400CB700AC134F /* DropSpaceDelegate.m */; };
+		5E4D99C222400CF000AC134F /* DropSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D99C122400CF000AC134F /* DropSpace.m */; };
+		5E601AAB2239796E00C607F8 /* ConsoleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E601AAA2239796E00C607F8 /* ConsoleDelegate.m */; };
+		5E6A5DEB223A9C7900C1B391 /* NSConsoleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A5DEA223A9C7900C1B391 /* NSConsoleCell.m */; };
+		5E6A5DED223AFC6D00C1B391 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A5DEC223AFC6D00C1B391 /* Common.m */; };
+		5E6A5DF0223B9AE100C1B391 /* NS2MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A5DEF223B9AE100C1B391 /* NS2MessagePack.m */; };
+		5E6A5DF3223C009400C1B391 /* DataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A5DF2223C009400C1B391 /* DataDelegate.m */; };
+		5E6A5DF5223D91D100C1B391 /* CreateSpace.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6A5DF4223D91D100C1B391 /* CreateSpace.xib */; };
+		5E6A5DFD223E571200C1B391 /* CreateSpaceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A5DFC223E571200C1B391 /* CreateSpaceDelegate.m */; };
+		5E6A5E00223ED27D00C1B391 /* CreateSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A5DFF223ED27D00C1B391 /* CreateSpace.m */; };
+		5E8F26B421BEC55600DA3854 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F26B321BEC55600DA3854 /* AppDelegate.m */; };
+		5E8F26B621BEC55700DA3854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F26B521BEC55700DA3854 /* Assets.xcassets */; };
+		5E8F26B921BEC55700DA3854 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F26B721BEC55700DA3854 /* MainMenu.xib */; };
+		5E8F26BC21BEC55700DA3854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F26BB21BEC55700DA3854 /* main.m */; };
+		5E8F26C621BEC76900DA3854 /* tarantool-c in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F26C521BEC76800DA3854 /* tarantool-c */; };
+		5EACE4302247FD91008A8766 /* createspace.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE42F2247FD91008A8766 /* createspace.lua */; };
+		5EACE4322247FE0B008A8766 /* dropspace.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE4312247FE0B008A8766 /* dropspace.lua */; };
+		5EACE4342247FE8E008A8766 /* getdata.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE4332247FE8E008A8766 /* getdata.lua */; };
+		5EACE4362247FF36008A8766 /* getspaces.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE4352247FF36008A8766 /* getspaces.lua */; };
+		5EACE4392248022C008A8766 /* IndexTypeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACE4382248022C008A8766 /* IndexTypeDataSource.m */; };
+		5EACE43C22480FBC008A8766 /* NS2Lua.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACE43B22480FBC008A8766 /* NS2Lua.m */; };
+		5EACE43F224A69E6008A8766 /* FieldTypesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACE43D224A69E6008A8766 /* FieldTypesDataSource.m */; };
+		5EACE442224A6ACE008A8766 /* alterdata.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE441224A6ACE008A8766 /* alterdata.lua */; };
+		5EACE445224A7000008A8766 /* AlterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACE444224A7000008A8766 /* AlterData.m */; };
+		5EB130A42231ABC6008473DF /* MessagePack2NS.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB130A32231ABC6008473DF /* MessagePack2NS.m */; };
+		5EB130A822327215008473DF /* GetSpaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB130A722327215008473DF /* GetSpaces.m */; };
+		5EC25EF32232F25E00B6004D /* SpacesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC25EF22232F25E00B6004D /* SpacesDelegate.m */; };
+		5EC25EFA2236DED300B6004D /* ConnectionsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC25EF92236DED300B6004D /* ConnectionsDelegate.m */; };
+		5ED687002246DD56006D364B /* AlterSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED686FF2246DD56006D364B /* AlterSpace.m */; };
+		5ED687022247F08F006D364B /* alterspace.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5ED687012247F08F006D364B /* alterspace.lua */; };
+		5EF99E162232B07800ADD7A6 /* GetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF99E152232B07800ADD7A6 /* GetData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E1AFB1121C916390089E2EB /* MsgPackDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgPackDataSource.h; sourceTree = "<group>"; };
+		5E1AFB1221C916390089E2EB /* MsgPackDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgPackDataSource.m; sourceTree = "<group>"; };
+		5E4D99BB224004B900AC134F /* DropSpace.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropSpace.xib; sourceTree = "<group>"; };
+		5E4D99BD22400CB700AC134F /* DropSpaceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropSpaceDelegate.h; sourceTree = "<group>"; };
+		5E4D99BE22400CB700AC134F /* DropSpaceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropSpaceDelegate.m; sourceTree = "<group>"; };
+		5E4D99C022400CF000AC134F /* DropSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropSpace.h; sourceTree = "<group>"; };
+		5E4D99C122400CF000AC134F /* DropSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropSpace.m; sourceTree = "<group>"; };
+		5E601AA92239796E00C607F8 /* ConsoleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleDelegate.h; sourceTree = "<group>"; };
+		5E601AAA2239796E00C607F8 /* ConsoleDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsoleDelegate.m; sourceTree = "<group>"; };
+		5E6A5DE9223A9C7900C1B391 /* NSConsoleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConsoleCell.h; sourceTree = "<group>"; };
+		5E6A5DEA223A9C7900C1B391 /* NSConsoleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConsoleCell.m; sourceTree = "<group>"; };
+		5E6A5DEC223AFC6D00C1B391 /* Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		5E6A5DEE223B9AE100C1B391 /* NS2MessagePack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NS2MessagePack.h; sourceTree = "<group>"; };
+		5E6A5DEF223B9AE100C1B391 /* NS2MessagePack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NS2MessagePack.m; sourceTree = "<group>"; };
+		5E6A5DF1223C009400C1B391 /* DataDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDelegate.h; sourceTree = "<group>"; };
+		5E6A5DF2223C009400C1B391 /* DataDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDelegate.m; sourceTree = "<group>"; };
+		5E6A5DF4223D91D100C1B391 /* CreateSpace.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateSpace.xib; sourceTree = "<group>"; };
+		5E6A5DFB223E571200C1B391 /* CreateSpaceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateSpaceDelegate.h; sourceTree = "<group>"; };
+		5E6A5DFC223E571200C1B391 /* CreateSpaceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateSpaceDelegate.m; sourceTree = "<group>"; };
+		5E6A5DFE223ED27D00C1B391 /* CreateSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateSpace.h; sourceTree = "<group>"; };
+		5E6A5DFF223ED27D00C1B391 /* CreateSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateSpace.m; sourceTree = "<group>"; };
+		5E8F26AF21BEC55600DA3854 /* tarantoolui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tarantoolui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8F26B221BEC55600DA3854 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E8F26B321BEC55600DA3854 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E8F26B521BEC55700DA3854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E8F26B821BEC55700DA3854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5E8F26BA21BEC55700DA3854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8F26BB21BEC55700DA3854 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E8F26C521BEC76800DA3854 /* tarantool-c */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "tarantool-c"; sourceTree = "<group>"; };
+		5EACE42F2247FD91008A8766 /* createspace.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = createspace.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		5EACE4312247FE0B008A8766 /* dropspace.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = dropspace.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		5EACE4332247FE8E008A8766 /* getdata.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = getdata.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		5EACE4352247FF36008A8766 /* getspaces.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = getspaces.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		5EACE4372248022C008A8766 /* IndexTypeDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexTypeDataSource.h; sourceTree = "<group>"; };
+		5EACE4382248022C008A8766 /* IndexTypeDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexTypeDataSource.m; sourceTree = "<group>"; };
+		5EACE43A22480FBC008A8766 /* NS2Lua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NS2Lua.h; sourceTree = "<group>"; };
+		5EACE43B22480FBC008A8766 /* NS2Lua.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NS2Lua.m; sourceTree = "<group>"; };
+		5EACE43D224A69E6008A8766 /* FieldTypesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldTypesDataSource.m; sourceTree = "<group>"; };
+		5EACE43E224A69E6008A8766 /* FieldTypesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldTypesDataSource.h; sourceTree = "<group>"; };
+		5EACE441224A6ACE008A8766 /* alterdata.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = alterdata.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		5EACE443224A7000008A8766 /* AlterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlterData.h; sourceTree = "<group>"; };
+		5EACE444224A7000008A8766 /* AlterData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterData.m; sourceTree = "<group>"; };
+		5EB1309D22303DC1008473DF /* MPTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPTableDataSource.h; sourceTree = "<group>"; };
+		5EB1309E22303DC1008473DF /* MPTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPTableDataSource.m; sourceTree = "<group>"; };
+		5EB130A0223046E4008473DF /* MPItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPItem.h; sourceTree = "<group>"; };
+		5EB130A1223046E4008473DF /* MPItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPItem.m; sourceTree = "<group>"; };
+		5EB130A32231ABC6008473DF /* MessagePack2NS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagePack2NS.m; sourceTree = "<group>"; };
+		5EB130A52231ABDB008473DF /* MessagePack2NS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagePack2NS.h; sourceTree = "<group>"; };
+		5EB130A622327203008473DF /* GetSpaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetSpaces.h; sourceTree = "<group>"; };
+		5EB130A722327215008473DF /* GetSpaces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetSpaces.m; sourceTree = "<group>"; };
+		5EC25EF12232F25E00B6004D /* SpacesDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpacesDelegate.h; sourceTree = "<group>"; };
+		5EC25EF22232F25E00B6004D /* SpacesDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpacesDelegate.m; sourceTree = "<group>"; };
+		5EC25EF82236DED300B6004D /* ConnectionsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionsDelegate.h; sourceTree = "<group>"; };
+		5EC25EF92236DED300B6004D /* ConnectionsDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionsDelegate.m; sourceTree = "<group>"; };
+		5ED686FE2246DD56006D364B /* AlterSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlterSpace.h; sourceTree = "<group>"; };
+		5ED686FF2246DD56006D364B /* AlterSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterSpace.m; sourceTree = "<group>"; };
+		5ED687012247F08F006D364B /* alterspace.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = alterspace.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		5EDB7B5D224D6BD800990026 /* libtarantool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtarantool.a; path = "tarantool-c/tnt/libtarantool.a"; sourceTree = "<group>"; };
+		5EF99E142232B06C00ADD7A6 /* GetData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetData.h; sourceTree = "<group>"; };
+		5EF99E152232B07800ADD7A6 /* GetData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetData.m; sourceTree = "<group>"; };
+		5EF99E172232B0CC00ADD7A6 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E8F26AC21BEC55600DA3854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E6A5DE8223A9C5400C1B391 /* console */ = {
+			isa = PBXGroup;
+			children = (
+				5E601AA92239796E00C607F8 /* ConsoleDelegate.h */,
+				5E601AAA2239796E00C607F8 /* ConsoleDelegate.m */,
+				5E6A5DE9223A9C7900C1B391 /* NSConsoleCell.h */,
+				5E6A5DEA223A9C7900C1B391 /* NSConsoleCell.m */,
+				5EACE43A22480FBC008A8766 /* NS2Lua.h */,
+				5EACE43B22480FBC008A8766 /* NS2Lua.m */,
+			);
+			path = console;
+			sourceTree = "<group>";
+		};
+		5E6A5DFA223D965A00C1B391 /* box.schema */ = {
+			isa = PBXGroup;
+			children = (
+				5E6A5DF4223D91D100C1B391 /* CreateSpace.xib */,
+				5EACE43E224A69E6008A8766 /* FieldTypesDataSource.h */,
+				5EACE43D224A69E6008A8766 /* FieldTypesDataSource.m */,
+				5EACE4372248022C008A8766 /* IndexTypeDataSource.h */,
+				5EACE4382248022C008A8766 /* IndexTypeDataSource.m */,
+				5E6A5DFB223E571200C1B391 /* CreateSpaceDelegate.h */,
+				5E6A5DFC223E571200C1B391 /* CreateSpaceDelegate.m */,
+				5EACE42F2247FD91008A8766 /* createspace.lua */,
+				5E6A5DFE223ED27D00C1B391 /* CreateSpace.h */,
+				5E6A5DFF223ED27D00C1B391 /* CreateSpace.m */,
+				5ED687012247F08F006D364B /* alterspace.lua */,
+				5ED686FE2246DD56006D364B /* AlterSpace.h */,
+				5ED686FF2246DD56006D364B /* AlterSpace.m */,
+				5E4D99BB224004B900AC134F /* DropSpace.xib */,
+				5E4D99BD22400CB700AC134F /* DropSpaceDelegate.h */,
+				5E4D99BE22400CB700AC134F /* DropSpaceDelegate.m */,
+				5EACE4312247FE0B008A8766 /* dropspace.lua */,
+				5E4D99C022400CF000AC134F /* DropSpace.h */,
+				5E4D99C122400CF000AC134F /* DropSpace.m */,
+				5EACE4352247FF36008A8766 /* getspaces.lua */,
+				5EB130A622327203008473DF /* GetSpaces.h */,
+				5EB130A722327215008473DF /* GetSpaces.m */,
+			);
+			path = box.schema;
+			sourceTree = "<group>";
+		};
+		5E8F26A621BEC55600DA3854 = {
+			isa = PBXGroup;
+			children = (
+				5E8F26C521BEC76800DA3854 /* tarantool-c */,
+				5E8F26B121BEC55600DA3854 /* tarantoolui */,
+				5E8F26B021BEC55600DA3854 /* Products */,
+				5E8F272E21BEC94D00DA3854 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E8F26B021BEC55600DA3854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E8F26AF21BEC55600DA3854 /* tarantoolui.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E8F26B121BEC55600DA3854 /* tarantoolui */ = {
+			isa = PBXGroup;
+			children = (
+				5EACE440224A6A19008A8766 /* box.space */,
+				5E6A5DFA223D965A00C1B391 /* box.schema */,
+				5E6A5DE8223A9C5400C1B391 /* console */,
+				5EC25EF42232F28000B6004D /* datasource */,
+				5E8F26B721BEC55700DA3854 /* MainMenu.xib */,
+				5E8F26B221BEC55600DA3854 /* AppDelegate.h */,
+				5E8F26B321BEC55600DA3854 /* AppDelegate.m */,
+				5EB130A52231ABDB008473DF /* MessagePack2NS.h */,
+				5EB130A32231ABC6008473DF /* MessagePack2NS.m */,
+				5E6A5DEE223B9AE100C1B391 /* NS2MessagePack.h */,
+				5E6A5DEF223B9AE100C1B391 /* NS2MessagePack.m */,
+				5EC25EF82236DED300B6004D /* ConnectionsDelegate.h */,
+				5EC25EF92236DED300B6004D /* ConnectionsDelegate.m */,
+				5EF99E172232B0CC00ADD7A6 /* Common.h */,
+				5E6A5DEC223AFC6D00C1B391 /* Common.m */,
+				5E8F26B521BEC55700DA3854 /* Assets.xcassets */,
+				5E8F26BA21BEC55700DA3854 /* Info.plist */,
+				5E8F26BB21BEC55700DA3854 /* main.m */,
+			);
+			path = tarantoolui;
+			sourceTree = "<group>";
+		};
+		5E8F272E21BEC94D00DA3854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EDB7B5D224D6BD800990026 /* libtarantool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EACE440224A6A19008A8766 /* box.space */ = {
+			isa = PBXGroup;
+			children = (
+				5EC25EF12232F25E00B6004D /* SpacesDelegate.h */,
+				5EC25EF22232F25E00B6004D /* SpacesDelegate.m */,
+				5E6A5DF1223C009400C1B391 /* DataDelegate.h */,
+				5E6A5DF2223C009400C1B391 /* DataDelegate.m */,
+				5EACE4332247FE8E008A8766 /* getdata.lua */,
+				5EF99E142232B06C00ADD7A6 /* GetData.h */,
+				5EF99E152232B07800ADD7A6 /* GetData.m */,
+				5EACE441224A6ACE008A8766 /* alterdata.lua */,
+				5EACE443224A7000008A8766 /* AlterData.h */,
+				5EACE444224A7000008A8766 /* AlterData.m */,
+			);
+			path = box.space;
+			sourceTree = "<group>";
+		};
+		5EC25EF42232F28000B6004D /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				5EB130A0223046E4008473DF /* MPItem.h */,
+				5EB130A1223046E4008473DF /* MPItem.m */,
+				5E1AFB1121C916390089E2EB /* MsgPackDataSource.h */,
+				5E1AFB1221C916390089E2EB /* MsgPackDataSource.m */,
+				5EB1309D22303DC1008473DF /* MPTableDataSource.h */,
+				5EB1309E22303DC1008473DF /* MPTableDataSource.m */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E8F26AE21BEC55600DA3854 /* tarantoolui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8F26C021BEC55700DA3854 /* Build configuration list for PBXNativeTarget "tarantoolui" */;
+			buildPhases = (
+				5E73BCEF224D649C00B85A6C /* ShellScript */,
+				5E8F26AB21BEC55600DA3854 /* Sources */,
+				5E8F26AC21BEC55600DA3854 /* Frameworks */,
+				5E8F26AD21BEC55600DA3854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tarantoolui;
+			productName = tarantoolui;
+			productReference = 5E8F26AF21BEC55600DA3854 /* tarantoolui.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E8F26A721BEC55600DA3854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = tarantool;
+				TargetAttributes = {
+					5E8F26AE21BEC55600DA3854 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5E8F26AA21BEC55600DA3854 /* Build configuration list for PBXProject "tarantoolui" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E8F26A621BEC55600DA3854;
+			productRefGroup = 5E8F26B021BEC55600DA3854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E8F26AE21BEC55600DA3854 /* tarantoolui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E8F26AD21BEC55600DA3854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EACE4302247FD91008A8766 /* createspace.lua in Resources */,
+				5EACE442224A6ACE008A8766 /* alterdata.lua in Resources */,
+				5E8F26C621BEC76900DA3854 /* tarantool-c in Resources */,
+				5EACE4362247FF36008A8766 /* getspaces.lua in Resources */,
+				5E8F26B621BEC55700DA3854 /* Assets.xcassets in Resources */,
+				5ED687022247F08F006D364B /* alterspace.lua in Resources */,
+				5E6A5DF5223D91D100C1B391 /* CreateSpace.xib in Resources */,
+				5E4D99BC224004B900AC134F /* DropSpace.xib in Resources */,
+				5EACE4322247FE0B008A8766 /* dropspace.lua in Resources */,
+				5EACE4342247FE8E008A8766 /* getdata.lua in Resources */,
+				5E8F26B921BEC55700DA3854 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E73BCEF224D649C00B85A6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/lib/libtarantool.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd tarantool-c\ncmake -DCMAKE_INSTALL_PREFIX=$DERIVED_FILE_DIR .\nmake \nrm -rf tnt/*.dylib\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E8F26AB21BEC55600DA3854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EACE445224A7000008A8766 /* AlterData.m in Sources */,
+				5E4D99BF22400CB700AC134F /* DropSpaceDelegate.m in Sources */,
+				5E6A5DED223AFC6D00C1B391 /* Common.m in Sources */,
+				5E6A5DFD223E571200C1B391 /* CreateSpaceDelegate.m in Sources */,
+				5E6A5DEB223A9C7900C1B391 /* NSConsoleCell.m in Sources */,
+				5EB130A42231ABC6008473DF /* MessagePack2NS.m in Sources */,
+				5EACE43F224A69E6008A8766 /* FieldTypesDataSource.m in Sources */,
+				5E6A5DF3223C009400C1B391 /* DataDelegate.m in Sources */,
+				5E8F26BC21BEC55700DA3854 /* main.m in Sources */,
+				5EC25EF32232F25E00B6004D /* SpacesDelegate.m in Sources */,
+				5E601AAB2239796E00C607F8 /* ConsoleDelegate.m in Sources */,
+				5E4D99C222400CF000AC134F /* DropSpace.m in Sources */,
+				5E6A5DF0223B9AE100C1B391 /* NS2MessagePack.m in Sources */,
+				5E6A5E00223ED27D00C1B391 /* CreateSpace.m in Sources */,
+				5EACE4392248022C008A8766 /* IndexTypeDataSource.m in Sources */,
+				5EB130A822327215008473DF /* GetSpaces.m in Sources */,
+				5E8F26B421BEC55600DA3854 /* AppDelegate.m in Sources */,
+				5EC25EFA2236DED300B6004D /* ConnectionsDelegate.m in Sources */,
+				5ED687002246DD56006D364B /* AlterSpace.m in Sources */,
+				5EACE43C22480FBC008A8766 /* NS2Lua.m in Sources */,
+				5EF99E162232B07800ADD7A6 /* GetData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E8F26B721BEC55700DA3854 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E8F26B821BEC55700DA3854 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E8F26BE21BEC55700DA3854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5E8F26BF21BEC55700DA3854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5E8F26C121BEC55700DA3854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/tarantool-c/include",
+					"\"$(SRCROOT)/tarantool-c/third_party\"",
+				);
+				INFOPLIST_FILE = tarantoolui/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tarantool-c/tnt",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-L$SRCROOT/tarantool-c/tnt/",
+					"-ltarantool",
+					"-L$SRCROOT/tarantool-c/third_party/msgpuck/",
+					"-lmsgpuck",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tarantool.tarantoolui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		5E8F26C221BEC55700DA3854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/tarantool-c/include",
+					"\"$(SRCROOT)/tarantool-c/third_party\"",
+				);
+				INFOPLIST_FILE = tarantoolui/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tarantool-c/tnt",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-L$SRCROOT/tarantool-c/tnt/",
+					"-ltarantool",
+					"-L$SRCROOT/tarantool-c/third_party/msgpuck/",
+					"-lmsgpuck",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tarantool.tarantoolui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E8F26AA21BEC55600DA3854 /* Build configuration list for PBXProject "tarantoolui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8F26BE21BEC55700DA3854 /* Debug */,
+				5E8F26BF21BEC55700DA3854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E8F26C021BEC55700DA3854 /* Build configuration list for PBXNativeTarget "tarantoolui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8F26C121BEC55700DA3854 /* Debug */,
+				5E8F26C221BEC55700DA3854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E8F26A721BEC55600DA3854 /* Project object */;
+}
