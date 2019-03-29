@@ -22,7 +22,6 @@
 		5E8F26B621BEC55700DA3854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F26B521BEC55700DA3854 /* Assets.xcassets */; };
 		5E8F26B921BEC55700DA3854 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F26B721BEC55700DA3854 /* MainMenu.xib */; };
 		5E8F26BC21BEC55700DA3854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F26BB21BEC55700DA3854 /* main.m */; };
-		5E8F26C621BEC76900DA3854 /* tarantool-c in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F26C521BEC76800DA3854 /* tarantool-c */; };
 		5EACE4302247FD91008A8766 /* createspace.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE42F2247FD91008A8766 /* createspace.lua */; };
 		5EACE4322247FE0B008A8766 /* dropspace.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE4312247FE0B008A8766 /* dropspace.lua */; };
 		5EACE4342247FE8E008A8766 /* getdata.lua in Resources */ = {isa = PBXBuildFile; fileRef = 5EACE4332247FE8E008A8766 /* getdata.lua */; };
@@ -64,7 +63,7 @@
 		5E6A5DFC223E571200C1B391 /* CreateSpaceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateSpaceDelegate.m; sourceTree = "<group>"; };
 		5E6A5DFE223ED27D00C1B391 /* CreateSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateSpace.h; sourceTree = "<group>"; };
 		5E6A5DFF223ED27D00C1B391 /* CreateSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateSpace.m; sourceTree = "<group>"; };
-		5E8F26AF21BEC55600DA3854 /* tarantoolmacui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tarantoolmacui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8F26AF21BEC55600DA3854 /* tarantool-macui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tarantool-macui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8F26B221BEC55600DA3854 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E8F26B321BEC55600DA3854 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5E8F26B521BEC55700DA3854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,7 +164,7 @@
 			children = (
 				5EDB7B5F224D712A00990026 /* README.md */,
 				5E8F26C521BEC76800DA3854 /* tarantool-c */,
-				5E8F26B121BEC55600DA3854 /* tarantoolmacui */,
+				5E8F26B121BEC55600DA3854 /* tarantool-macui */,
 				5E8F26B021BEC55600DA3854 /* Products */,
 				5E8F272E21BEC94D00DA3854 /* Frameworks */,
 			);
@@ -174,12 +173,12 @@
 		5E8F26B021BEC55600DA3854 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E8F26AF21BEC55600DA3854 /* tarantoolmacui.app */,
+				5E8F26AF21BEC55600DA3854 /* tarantool-macui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E8F26B121BEC55600DA3854 /* tarantoolmacui */ = {
+		5E8F26B121BEC55600DA3854 /* tarantool-macui */ = {
 			isa = PBXGroup;
 			children = (
 				5EACE440224A6A19008A8766 /* box.space */,
@@ -201,7 +200,7 @@
 				5E8F26BA21BEC55700DA3854 /* Info.plist */,
 				5E8F26BB21BEC55700DA3854 /* main.m */,
 			);
-			path = tarantoolmacui;
+			path = "tarantool-macui";
 			sourceTree = "<group>";
 		};
 		5E8F272E21BEC94D00DA3854 /* Frameworks */ = {
@@ -245,9 +244,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E8F26AE21BEC55600DA3854 /* tarantoolmacui */ = {
+		5E8F26AE21BEC55600DA3854 /* tarantool-macui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E8F26C021BEC55700DA3854 /* Build configuration list for PBXNativeTarget "tarantoolmacui" */;
+			buildConfigurationList = 5E8F26C021BEC55700DA3854 /* Build configuration list for PBXNativeTarget "tarantool-macui" */;
 			buildPhases = (
 				5E73BCEF224D649C00B85A6C /* ShellScript */,
 				5E8F26AB21BEC55600DA3854 /* Sources */,
@@ -258,9 +257,9 @@
 			);
 			dependencies = (
 			);
-			name = tarantoolmacui;
+			name = "tarantool-macui";
 			productName = tarantoolui;
-			productReference = 5E8F26AF21BEC55600DA3854 /* tarantoolmacui.app */;
+			productReference = 5E8F26AF21BEC55600DA3854 /* tarantool-macui.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +281,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5E8F26AA21BEC55600DA3854 /* Build configuration list for PBXProject "tarantoolmacui" */;
+			buildConfigurationList = 5E8F26AA21BEC55600DA3854 /* Build configuration list for PBXProject "tarantool-macui" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,7 +294,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E8F26AE21BEC55600DA3854 /* tarantoolmacui */,
+				5E8F26AE21BEC55600DA3854 /* tarantool-macui */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +306,6 @@
 			files = (
 				5EACE4302247FD91008A8766 /* createspace.lua in Resources */,
 				5EACE442224A6ACE008A8766 /* alterdata.lua in Resources */,
-				5E8F26C621BEC76900DA3854 /* tarantool-c in Resources */,
 				5EACE4362247FF36008A8766 /* getspaces.lua in Resources */,
 				5E8F26B621BEC55700DA3854 /* Assets.xcassets in Resources */,
 				5ED687022247F08F006D364B /* alterspace.lua in Resources */,
@@ -510,7 +508,7 @@
 					"$(PROJECT_DIR)/tarantool-c/include",
 					"\"$(SRCROOT)/tarantool-c/third_party\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/tarantoolmacui/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/tarantool-macui/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -526,7 +524,7 @@
 					"-L$SRCROOT/tarantool-c/third_party/msgpuck/",
 					"-lmsgpuck",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.tarantool.tarantoolui;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.tarantool.tarantool-macui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -544,7 +542,7 @@
 					"$(PROJECT_DIR)/tarantool-c/include",
 					"\"$(SRCROOT)/tarantool-c/third_party\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/tarantoolmacui/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/tarantool-macui/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -560,7 +558,7 @@
 					"-L$SRCROOT/tarantool-c/third_party/msgpuck/",
 					"-lmsgpuck",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.tarantool.tarantoolui;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.tarantool.tarantool-macui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -569,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E8F26AA21BEC55600DA3854 /* Build configuration list for PBXProject "tarantoolmacui" */ = {
+		5E8F26AA21BEC55600DA3854 /* Build configuration list for PBXProject "tarantool-macui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E8F26BE21BEC55700DA3854 /* Debug */,
@@ -578,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5E8F26C021BEC55700DA3854 /* Build configuration list for PBXNativeTarget "tarantoolmacui" */ = {
+		5E8F26C021BEC55700DA3854 /* Build configuration list for PBXNativeTarget "tarantool-macui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E8F26C121BEC55700DA3854 /* Debug */,
