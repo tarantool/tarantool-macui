@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +14,11 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="tarantoolui" id="1Xt-HY-uBw">
+                <menuItem title="tarantoolmacui" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="tarantoolui" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="tarantoolmacui" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About tarantoolui" id="5kV-Vb-QxS">
+                            <menuItem title="About tarantoolmacui" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -33,7 +32,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide tarantoolui" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide tarantoolmacui" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -51,7 +50,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit tarantoolui" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit tarantoolmacui" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -664,7 +663,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="tarantoolui Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="tarantoolmacui Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -732,7 +731,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <clipView key="contentView" ambiguous="YES" id="nDR-3m-Yo5">
                                             <rect key="frame" x="1" y="0.0" width="196" height="637"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveName="connections-view" rowSizeStyle="automatic" headerView="XS2-ar-OYV" viewBased="YES" id="4dK-SH-v1S">
                                                     <rect key="frame" x="0.0" y="0.0" width="196" height="612"/>
@@ -802,7 +801,7 @@
                                             </subviews>
                                         </clipView>
                                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="hne-By-jbW">
-                                            <rect key="frame" x="1" y="621" width="196" height="16"/>
+                                            <rect key="frame" x="1" y="9" width="0.0" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="NCT-U2-a7j">
@@ -857,7 +856,7 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <clipView key="contentView" ambiguous="YES" id="pmD-nX-5NJ">
                                                             <rect key="frame" x="1" y="0.0" width="183" height="416"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveName="objects-view" rowSizeStyle="automatic" headerView="xUf-iY-nOV" viewBased="YES" id="g1y-iS-gWa">
                                                                     <rect key="frame" x="0.0" y="0.0" width="183" height="391"/>
@@ -908,7 +907,7 @@
                                                             <edgeInsets key="contentInsets" left="0.0" right="0.0" top="25" bottom="0.0"/>
                                                         </clipView>
                                                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="WRK-qw-u7k">
-                                                            <rect key="frame" x="1" y="400" width="183" height="16"/>
+                                                            <rect key="frame" x="1" y="9" width="0.0" height="16"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="e6m-9C-gFj">
@@ -993,7 +992,7 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <clipView key="contentView" ambiguous="YES" id="ftI-4l-4QP">
                                                             <rect key="frame" x="1" y="0.0" width="414" height="416"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveName="data-view" headerView="3nk-oV-koH" id="kCu-Us-TiB">
                                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="391"/>
@@ -1012,7 +1011,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="YO0-ok-5eK">
-                                                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                                            <rect key="frame" x="-15" y="25" width="16" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <tableHeaderView key="headerView" id="3nk-oV-koH">
@@ -1090,7 +1089,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <clipView key="contentView" drawsBackground="NO" id="s1u-vc-lN5">
                                                     <rect key="frame" x="1" y="1" width="600" height="195"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnSelection="YES" autosaveColumns="NO" rowHeight="36" id="A8t-Hg-OwO">
                                                             <rect key="frame" x="0.0" y="0.0" width="600" height="195"/>
@@ -1124,11 +1123,11 @@
                                                     <nil key="backgroundColor"/>
                                                 </clipView>
                                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="YlP-8x-FDl">
-                                                    <rect key="frame" x="1" y="180" width="466" height="16"/>
+                                                    <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </scroller>
                                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="z0Q-fd-Tyj">
-                                                    <rect key="frame" x="1043" y="25" width="16" height="28"/>
+                                                    <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </scroller>
                                             </scrollView>
@@ -1251,7 +1250,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="yzi-i9-zFx">
-                                                <rect key="frame" x="328" y="1" width="16" height="87"/>
+                                                <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
