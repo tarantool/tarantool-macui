@@ -9,6 +9,14 @@ Install xcode
 xcode-select --install
 ```
 
+Git clone 
+
+``` bash
+git clone ...
+cd ...
+git submodule update --init --recursive 
+```
+
 Install brew
 
 ``` bash
