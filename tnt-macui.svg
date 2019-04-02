@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
+   width="78.602417mm"
+   height="78.604073mm"
+   viewBox="0 0 278.5125 278.51837"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="tnt.svg"
+   sodipodi:docname="tnt-macui.svg"
    inkscape:export-filename="/Users/michael.filonenko/tnt.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.24"
-     inkscape:cx="166.19242"
-     inkscape:cy="831.21883"
+     inkscape:zoom="1.28"
+     inkscape:cx="73.337678"
+     inkscape:cy="130.8722"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -79,7 +79,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 1,0"
+       pattern="M 0,0 H 1"
        is_visible="true"
        id="path-effect4336"
        effect="skeletal" />
@@ -93,7 +93,7 @@
        scale_y_rel="false"
        prop_scale="1.05"
        copytype="single_stretched"
-       pattern="M 0,0 1,0"
+       pattern="M 0,0 H 1"
        is_visible="true"
        id="path-effect4334"
        effect="skeletal" />
@@ -110,7 +110,7 @@
     <inkscape:path-effect
        steps="8"
        equidistant_spacing="true"
-       trajectory="M 0,0 0,0"
+       trajectory="M 0,0 V 0"
        is_visible="true"
        id="path-effect4330"
        effect="interpolate" />
@@ -139,10 +139,10 @@
        id="path-effect4328"
        effect="rough_hatches" />
     <inkscape:path-effect
-       bendpath4="m 348.261,382.12174 0,216.48094"
-       bendpath3="m 348.261,598.60268 187.478,0"
-       bendpath2="m 535.739,382.12174 0,216.48094"
-       bendpath1="m 348.261,382.12174 187.478,0"
+       bendpath4="M 348.261,382.12174 V 598.60268"
+       bendpath3="M 348.261,598.60268 H 535.739"
+       bendpath2="M 535.739,382.12174 V 598.60268"
+       bendpath1="M 348.261,382.12174 H 535.739"
        xx="true"
        yy="true"
        is_visible="true"
@@ -151,11 +151,11 @@
     <inkscape:path-effect
        scale_y_rel="false"
        prop_scale="1.27"
-       strokepath="M 0,0 1,0"
+       strokepath="M 0,0 H 1"
        endpoint_spacing_variation="1;1"
        endpoint_edge_variation="2.7;1"
        startpoint_spacing_variation="1.3;1"
-       startpoint_edge_variation="1.3;3868566155"
+       startpoint_edge_variation="1.3;2147483646"
        count="5"
        is_visible="true"
        id="path-effect4318"
@@ -201,7 +201,7 @@
        linejoin_type="round"
        start_linecap_type="round"
        interpolator_beta="0.2"
-       interpolator_type=""
+       interpolator_type="Linear"
        sort_points="true"
        offset_points="0,1.001 | 3,1.001"
        is_visible="true"
@@ -242,10 +242,10 @@
        id="path-effect4306"
        effect="rough_hatches" />
     <inkscape:path-effect
-       bendpath4="m 348.261,382.12174 0,216.48094"
-       bendpath3="m 348.261,598.60268 187.478,0"
-       bendpath2="m 535.739,382.12174 0,216.48094"
-       bendpath1="m 348.261,382.12174 187.478,0"
+       bendpath4="M 348.261,382.12174 V 598.60268"
+       bendpath3="M 348.261,598.60268 H 535.739"
+       bendpath2="M 535.739,382.12174 V 598.60268"
+       bendpath1="M 348.261,382.12174 H 535.739"
        xx="true"
        yy="true"
        is_visible="true"
@@ -255,16 +255,16 @@
        vertical="false"
        scale_y_rel="false"
        prop_scale="1.11"
-       bendpath="m 348.261,490.36221 187.478,0"
+       bendpath="M 348.261,490.36221 H 535.739"
        is_visible="true"
        id="path-effect4302"
        effect="bend_path" />
     <inkscape:perspective
        id="perspective4259"
-       inkscape:persp3d-origin="372.04724 : 350.7874 : 1"
-       inkscape:vp_z="744.09449 : 526.1811 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.1811 : 1"
+       inkscape:persp3d-origin="372.04727 : 350.78738 : 1"
+       inkscape:vp_z="744.09454 : 526.18106 : 1"
+       inkscape:vp_y="0 : 999.99993 : 0"
+       inkscape:vp_x="0 : 526.18106 : 1"
        sodipodi:type="inkscape:persp3d" />
   </defs>
   <metadata
@@ -281,7 +281,8 @@
   <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     inkscape:label="Layer 1"
+     transform="translate(0.60048503,-0.8326805)">
     <path
        d="m 136.1721,277.88339 c -2.39146,1.28148 -6.26879,1.28148 -8.66025,0 L 5.433909,212.46806 c -2.39146,-1.28146 -4.33013,-4.39795 -4.33013,-6.96088 V 74.676533 c 0,-2.562921 1.93867,-5.67942 4.33013,-6.960881 L 127.51185,2.3003293 c 2.39146,-1.281463 6.26879,-1.281463 8.66025,0 L 258.25003,67.715652 c 2.39146,1.281471 4.33012,4.39796 4.33012,6.960881 V 205.50719 c 0,2.56293 -1.93866,5.67942 -4.33012,6.96088 z"
        id="path5192"
@@ -331,24 +332,7 @@
            height="109"
            x="222"
            y="-31.480345" /></flowRegion><flowPara
-         id="flowPara5254"></flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot5256"
-       style="font-style:normal;font-weight:normal;font-size:21.33333397px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.9375,0,0,0.87011019,24.097004,34.990022)"
-       inkscape:export-xdpi="330.84448"
-       inkscape:export-ydpi="330.84448"><flowRegion
-         id="flowRegion5258"
-         style="font-size:21.33333397px;fill:#ffffff;fill-opacity:1"><rect
-           id="rect5260"
-           width="194.20663"
-           height="63.099632"
-           x="44.169743"
-           y="33.700466"
-           style="font-size:21.33333397px;fill:#ffffff;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara5262"><flowSpan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-   id="flowSpan5264">TARAN</flowSpan>TOOL</flowPara></flowRoot>    <rect
+         id="flowPara5254" /></flowRoot>    <rect
        style="fill:#232526;fill-opacity:1;stroke:none;stroke-width:1.26073527;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect5280"
        width="158.18759"
@@ -372,5 +356,22 @@
            x="188.38786"
            y="173.63976"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.99972236;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
-         id="flowPara5278">MACUI</flowPara></flowRoot>  </g>
+         id="flowPara5278">MACUI</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5256"
+       style="font-style:normal;font-weight:normal;font-size:21.33333397px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.9375,0,0,0.87011019,24.097004,34.990022)"
+       inkscape:export-xdpi="330.84448"
+       inkscape:export-ydpi="330.84448"><flowRegion
+         id="flowRegion5258"
+         style="font-size:21.33333397px;fill:#ffffff;fill-opacity:1"><rect
+           id="rect5260"
+           width="194.20663"
+           height="63.099632"
+           x="44.169743"
+           y="33.700466"
+           style="font-size:21.33333397px;fill:#ffffff;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara5262"><flowSpan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
+   id="flowSpan5264">TARAN</flowSpan>TOOL</flowPara></flowRoot>  </g>
 </svg>
