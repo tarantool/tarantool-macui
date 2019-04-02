@@ -1,6 +1,6 @@
 # Intro
 
-![logo](https://raw.githubusercontent.com/tarantool/tarantool-macui/master/tnt-macui.svg?sanitize=true)
+![logo](https://raw.githubusercontent.com/tarantool/tarantool-macui/master/tnt-macui.png)
 
 
 Simple Graphical User Interface for Tarantool Database for MacOSX
