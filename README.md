@@ -5,20 +5,31 @@
 
 Simple Graphical User Interface for Tarantool Database for MacOSX
 
+# Download
+
+Download binary from Release page
+
+https://github.com/tarantool/tarantool-macui/releases
+
 # Building from source
 
-Install xcode 
+Install XCode
 
+```
+https://developer.apple.com/xcode/
+```
+
+Install command line tools
 ``` bash
 xcode-select --install
 ```
 
-Git clone 
+Git clone
 
 ``` bash
 git clone git@github.com:tarantool/tarantool-macui.git
 cd tarantool-macui
-git submodule update --init --recursive 
+git submodule update --init --recursive
 ```
 
 Install brew
