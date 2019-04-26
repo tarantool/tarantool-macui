@@ -27,10 +27,10 @@ enum {
 
 @end
 
-@interface ConnectionsDelegate : NSObject
+@interface ConnectionsDelegate : NSObject <NSTableViewDelegate>
 
-@property (weak) IBOutlet NSArrayController *connectionsController;
-@property (weak) IBOutlet NSUserDefaultsController *defaultsController;
+@property (nonatomic,weak) IBOutlet NSArrayController *connectionsController;
+@property (nonatomic,weak) IBOutlet NSUserDefaultsController *defaultsController;
 
 -(IBAction)addConnectionFired:(NSButton *)sender;
 -(IBAction)removeConnectionFired:(NSButton *)sender;

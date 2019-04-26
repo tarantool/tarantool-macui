@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DropSpaceDelegate : NSObject<NSWindowDelegate>
 
-@property (strong) NSDictionary *selectedConnection;
+@property (nonatomic,strong) NSDictionary *selectedConnection;
 
-@property (weak) NSObjectController *objectsController;
+@property (nonatomic,weak) NSObjectController *objectsController;
 
-@property (weak) IBOutlet NSTextField *textField;
+@property (nonatomic,weak) IBOutlet NSTextField *textField;
 
 - (IBAction)stopModal:(id)sender;
 - (IBAction)abortModal:(id)sender;

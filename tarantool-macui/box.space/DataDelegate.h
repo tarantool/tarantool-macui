@@ -10,15 +10,15 @@
 
 @interface DataDelegate : NSObject <NSTextFieldDelegate, NSTableViewDataSource>
 
-@property (weak) IBOutlet NSArrayController *connectionsController;
+@property (nonatomic, weak) IBOutlet NSArrayController *connectionsController;
 
-@property (weak) IBOutlet NSArrayController *spacesController;
-@property (weak) IBOutlet NSTableView *spacesView;
+@property (nonatomic, weak) IBOutlet NSArrayController *spacesController;
+@property (nonatomic, weak) IBOutlet NSTableView *spacesView;
 
-@property (weak) IBOutlet NSTableView *dataView;
+@property (nonatomic, weak) IBOutlet NSTableView *dataView;
 
-@property (weak) IBOutlet NSSearchField *searchField;
-@property (weak) IBOutlet NSPopUpButton *rowcountField;
+@property (nonatomic, weak) IBOutlet NSSearchField *searchField;
+@property (nonatomic, weak) IBOutlet NSPopUpButton *rowcountField;
 
 - (IBAction)next:(id)sender;
 - (IBAction)prev:(id)sender;

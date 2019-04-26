@@ -13,26 +13,26 @@
 
 @interface SpacesDelegate : NSObject<NSTextFieldDelegate>
 
-@property (weak) IBOutlet NSPanel *searchPanel;
+@property (nonatomic, weak) IBOutlet NSPanel *searchPanel;
 
-@property (weak) IBOutlet NSArrayController *spacesController;
-@property (weak) IBOutlet NSTableView *spacesView;
+@property (nonatomic, weak) IBOutlet NSArrayController *spacesController;
+@property (nonatomic, weak) IBOutlet NSTableView *spacesView;
 
-@property (weak) IBOutlet NSPredicateEditor *editor;
+@property (nonatomic, weak) IBOutlet NSPredicateEditor *editor;
 
-@property (weak) IBOutlet NSArrayController *connectionsController;
+@property (nonatomic, weak) IBOutlet NSArrayController *connectionsController;
 
-@property (weak) IBOutlet NSPanel *settingsPanel;
+@property (nonatomic, weak) IBOutlet NSPanel *settingsPanel;
 
-@property (weak) IBOutlet NSWindow *createSpaceWindow;
-@property (strong) NSArray *createSpaceGuard;
-@property (weak) IBOutlet CreateSpaceDelegate *createSpaceDelegate;
+@property (nonatomic, weak) IBOutlet NSWindow *createSpaceWindow;
+@property (nonatomic, strong) NSArray *createSpaceGuard;
+@property (nonatomic, weak) IBOutlet CreateSpaceDelegate *createSpaceDelegate;
 
-@property (weak) IBOutlet NSWindow *dropSpaceWindow;
-@property (strong) NSArray *dropSpaceGuard;
-@property (weak) IBOutlet DropSpaceDelegate *dropSpaceDelegate;
+@property (nonatomic, weak) IBOutlet NSWindow *dropSpaceWindow;
+@property (nonatomic, strong) NSArray *dropSpaceGuard;
+@property (nonatomic, weak) IBOutlet DropSpaceDelegate *dropSpaceDelegate;
 
-@property (weak) IBOutlet NSTextField *name;
+@property (nonatomic, weak) IBOutlet NSTextField *name;
 
 - (void)awakeFromNib;
 

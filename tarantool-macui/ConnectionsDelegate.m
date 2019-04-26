@@ -68,6 +68,11 @@
         dispatch_queue_t serialTntQueue = dispatch_queue_create("io.tarantool.Queue", NULL);
         [value setObject:serialTntQueue forKey:@"tnt_queue"];
         
+        [connectionsController addObserver:self
+                                forKeyPath:@"content.url"
+                                   options:NSKeyValueObservingOptionNew
+                                   context:NULL];
+
         [self->connectionsController addObject:value];
         [self saveState];
     }
@@ -87,50 +92,12 @@
         return;
     
     if ([keyPath isEqualToString:@"selection"]) {
-        BOOL connect = NO;
-        
         if ([connectionsController.selectedObjects count] < 1)
             return;
         
-        NSMutableDictionary *obj = [connectionsController.selectedObjects objectAtIndex:0];
+        NSMutableDictionary *connection = [connectionsController.selectedObjects objectAtIndex:0];
+        [self connectionDidSelected:connection];
         
-        long state = [[obj objectForKey:@"state"] integerValue];
-        
-        // Check if url changed
-        if (state == CONNECTED || state == CONNECTING) {
-            assert([obj objectForKey:@"tnt_stream"] != nil);
-            
-            struct tnt_stream* tnt = [(NSTntStream*)[obj objectForKey:@"tnt_stream"] tnt];
-            NSString *url = [obj objectForKey:@"url"];
-            assert(url != nil);
-            if (TNT_SNET_CAST(tnt)->opt.uristr) {
-                size_t len = strlen(TNT_SNET_CAST(tnt)->opt.uristr);
-                if (strncmp([url UTF8String], TNT_SNET_CAST(tnt)->opt.uristr, len)) {
-                    connect = YES;
-                }
-            }
-        }
-        
-        // Check if disconnected
-        if (state == CONNECTED) {
-            assert([obj objectForKey:@"tnt_stream"] != nil);
-            struct tnt_stream* tnt = [(NSTntStream*)[obj objectForKey:@"tnt_stream"] tnt];
-            if (TNT_SNET_CAST(tnt)->fd < 0) {
-                connect = YES;
-            } else {
-                int error_code;
-                int error_code_size = sizeof(error_code);
-                getsockopt(TNT_SNET_CAST(tnt)->fd, SOL_SOCKET, SO_ERROR, &error_code, &error_code_size);
-                if (error_code != 0)
-                    connect = YES;
-            }
-        }
-        
-        if (state == ERROR)
-            connect = YES;  
-        
-        if (connect)
-            [self establishConnection:obj];
     } else if ([keyPath isEqualToString:@"content.url"]) {
         [self observeValueForKeyPath:@"selection" ofObject:object change:nil context:NULL];
         
@@ -138,6 +105,49 @@
     } else if ([keyPath isEqualToString:@"content.alias"]) {
         [self saveState];
     }
+}
+
+- (void)connectionDidSelected:(NSMutableDictionary*) obj {
+    BOOL connect = NO;
+    
+    long state = [[obj objectForKey:@"state"] integerValue];
+    
+    // Check if url changed
+    if (state == CONNECTED || state == CONNECTING) {
+        assert([obj objectForKey:@"tnt_stream"] != nil);
+        
+        struct tnt_stream* tnt = [(NSTntStream*)[obj objectForKey:@"tnt_stream"] tnt];
+        NSString *url = [obj objectForKey:@"url"];
+        assert(url != nil);
+        if (TNT_SNET_CAST(tnt)->opt.uristr) {
+            size_t len = strlen(TNT_SNET_CAST(tnt)->opt.uristr);
+            if (strncmp([url UTF8String], TNT_SNET_CAST(tnt)->opt.uristr, len)) {
+                connect = YES;
+            }
+        }
+    }
+    
+    // Check if disconnected
+    if (state == CONNECTED) {
+        assert([obj objectForKey:@"tnt_stream"] != nil);
+        struct tnt_stream* tnt = [(NSTntStream*)[obj objectForKey:@"tnt_stream"] tnt];
+        if (TNT_SNET_CAST(tnt)->fd < 0) {
+            connect = YES;
+        } else {
+            int error_code;
+            int error_code_size = sizeof(error_code);
+            getsockopt(TNT_SNET_CAST(tnt)->fd, SOL_SOCKET, SO_ERROR,
+                       &error_code, &error_code_size);
+            if (error_code != 0)
+            connect = YES;
+        }
+    }
+    
+    if (state == ERROR)
+    connect = YES;
+    
+    if (connect)
+    [self establishConnection:obj];
 }
 
 - (void)establishConnection:(NSMutableDictionary*) obj {
@@ -208,6 +218,7 @@
 
 
 - (void)restoreState {
+    
     connectionsController.selectsInsertedObjects = NO;
     NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
     NSArray *pureconnections = [NSMutableArray arrayWithArray:[settings arrayForKey:@"connections"]];
@@ -226,6 +237,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
     msg = [NSAlert new];
     [msg addButtonWithTitle:@"Ok"];
     [msg addButtonWithTitle:@"Cancel"];
@@ -238,11 +250,6 @@
     [connectionsController addObserver:self
                             forKeyPath:@"selection"
                                options:NSKeyValueObservingOptionInitial
-                               context:NULL];
-    
-    [connectionsController addObserver:self
-                            forKeyPath:@"content.url"
-                               options:NSKeyValueObservingOptionNew
                                context:NULL];
     
     [connectionsController addObserver:self

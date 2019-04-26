@@ -12,17 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CreateSpaceDelegate : NSObject
 
-@property (strong) NSDictionary *selectedConnection;
+@property (nonatomic,strong) NSDictionary *selectedConnection;
 
-@property (weak) IBOutlet NSObjectController *createSpaceObject;
+@property (nonatomic,weak) IBOutlet NSObjectController *createSpaceObject;
 
-@property (weak) NSObjectController *spacesController;
+@property (nonatomic,weak) NSObjectController *spacesController;
 
 @property (atomic) BOOL isnew;
-@property (weak) NSMutableDictionary *origin;
+@property (nonatomic,weak) NSMutableDictionary *origin;
 
-@property (weak) IBOutlet NSArrayController *formatController;
-@property (weak) IBOutlet NSArrayController *indexController;
+@property (nonatomic,weak) IBOutlet NSArrayController *formatController;
+@property (nonatomic,weak) IBOutlet NSArrayController *indexController;
 
 - (IBAction)stopModal:(id)sender;
 - (IBAction)abortModal:(id)sender;

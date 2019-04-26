@@ -31,9 +31,9 @@ void ns2MessagePack(id source, struct tnt_stream* parent) {
         } else if ([source objCType][0] == @encode(unsigned short)[0]) {
             tnt_object_add_uint(result, [source unsignedShortValue]);
         } else if ([source objCType][0] == @encode(int)[0]) {
-            tnt_object_add_int(result, [source integerValue]);
+            tnt_object_add_int(result, [source intValue]);
         } else if ([source objCType][0] == @encode(unsigned int)[0]) {
-            tnt_object_add_uint(result, [source unsignedIntegerValue]);
+            tnt_object_add_uint(result, [source unsignedIntValue]);
         } else if ([source objCType][0] == @encode(long)[0]) {
             tnt_object_add_int(result, [source longValue]);
         } else if ([source objCType][0] == @encode(unsigned long)[0]) {

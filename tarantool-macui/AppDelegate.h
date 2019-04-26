@@ -8,14 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "ConnectionsDelegate.h"
-#import "box.space/SpacesDelegate.h"
-#import "ConsoleDelegate.h"
-#import "DataDelegate.h"
-
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate>
-
--(BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender;
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @end
 

@@ -10,10 +10,10 @@
 
 @interface ConsoleDelegate : NSObject<NSTextViewDelegate>
 
-@property (weak) IBOutlet NSArrayController *connectionsController;
+@property (nonatomic,weak) IBOutlet NSArrayController *connectionsController;
 
-@property (weak) IBOutlet NSArrayController *consoleController;
-@property (weak) IBOutlet NSTableView *consoleView;
+@property (nonatomic,weak) IBOutlet NSArrayController *consoleController;
+@property (nonatomic,weak) IBOutlet NSTableView *consoleView;
 
 - (void)awakeFromNib;
 
